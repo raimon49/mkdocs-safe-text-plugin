@@ -1,0 +1,1 @@
+# mkdocs-safe-text-plugin
