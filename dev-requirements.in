@@ -4,5 +4,5 @@ autopep8
 docutils
 wheel
 pip-tools
-pytest-pep8
+pytest-pycodestyle
 pytest-pythonpath
