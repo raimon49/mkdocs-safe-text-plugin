@@ -35,7 +35,7 @@ setup(
     install_requires=[
         'bleach',
         'bleach-whitelist',
-        'mkdocs',
+        'mkdocs>=0.17.0',
     ],
     entry_points={
         'mkdocs.plugins': [
