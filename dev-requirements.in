@@ -6,3 +6,4 @@ wheel
 pip-tools
 pytest-pycodestyle
 pytest-pythonpath
+twine
