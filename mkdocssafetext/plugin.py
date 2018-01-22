@@ -5,11 +5,22 @@ from __future__ import (division, print_function,
 import copy
 
 from mkdocs.plugins import BasePlugin
+from mkdocs import utils
+from mkdocs.config import config_options
 import bleach
 from bleach_whitelist import markdown_tags, markdown_attrs
 
 
+SAFE_PLUGIN_CONFIG_SCHEME = (
+    ('append_allowed_tags', config_options.Type(list, default=[])),
+    ('remove_allowed_tags', config_options.Type(list, default=[])),
+    ('allowed_attrs', config_options.Type(dict, default={})),
+)
+
+
 class SafeTextPlugin(BasePlugin):
+    config_scheme = SAFE_PLUGIN_CONFIG_SCHEME
+
     def __init__(self):
         self.markdown_tags = copy.deepcopy(markdown_tags)
         self.markdown_attrs = copy.deepcopy(markdown_attrs)
