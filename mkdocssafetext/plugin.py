@@ -2,10 +2,8 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 from __future__ import (division, print_function,
                         absolute_import, unicode_literals)
-import copy
 
 from mkdocs.plugins import BasePlugin
-from mkdocs.config import config_options
 import bleach
 from .config import (SAFE_PLUGIN_CONFIG_SCHEME,
                      SafeTextPluginConfig)
