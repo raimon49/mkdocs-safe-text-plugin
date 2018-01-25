@@ -20,13 +20,7 @@ class SafeTextPlugin(BasePlugin):
 
         return config
 
-    def on_page_markdown(self, markdown, page, config, site_navigation):
-        return markdown
-
     def on_page_content(self, html, page, config, site_navigation):
         return bleach.clean(html,
                             tags=self.plugin_config.markdown_tags,
                             attributes=self.plugin_config.markdown_attrs)
-
-    def on_page_context(self, context, page, config, site_navigation):
-        return context
