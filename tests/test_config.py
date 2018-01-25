@@ -36,6 +36,8 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertIn('video', plugin_config.markdown_tags)
         self.assertIn('audio', plugin_config.markdown_tags)
         self.assertNotIn('undefined', plugin_config.markdown_tags)
+        self.assertNotEqual(plugin_config.markdown_tags,
+                            bleach_whitelist.markdown_tags)
 
     def test_remove_allowed_tags(self):
         config_remove_allowed_tags = {
@@ -49,6 +51,21 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertNotIn('ol', plugin_config.markdown_tags)
         self.assertNotIn('li', plugin_config.markdown_tags)
         self.assertIn('h1', plugin_config.markdown_tags)
+        self.assertNotEqual(plugin_config.markdown_tags,
+                            bleach_whitelist.markdown_tags)
+
+    def test_allowed_attrs(self):
+        config_allowed_attrs = {
+            'append_allowed_tags': [],
+            'remove_allowed_tags': [],
+            'allowed_attrs': {"img": ["src", "width", "height"]},
+        }
+        plugin_config = SafeTextPluginConfig(config_allowed_attrs)
+
+        self.assertEqual(plugin_config.markdown_attrs,
+                         config_allowed_attrs['allowed_attrs'])
+        self.assertNotEqual(plugin_config.markdown_attrs,
+                            bleach_whitelist.markdown_attrs)
 
     def tearDown(self):
         pass

@@ -22,6 +22,7 @@ class SafeTextPluginConfig(object):
     def __init__(self, config):
         self._update_allowed_tags(config['append_allowed_tags'],
                                   config['remove_allowed_tags'])
+        self._update_allowed_attrs(config['allowed_attrs'])
 
     def _update_allowed_tags(self, append_allowed_tags, remove_allowed_tags):
         updated_tags = set(self.markdown_tags)
@@ -31,12 +32,18 @@ class SafeTextPluginConfig(object):
             [updated_tags.add(tag) for tag in append_allowed_tags]
             is_updated = True
 
-        if len(remove_allowed_tags) > 0 :
+        if len(remove_allowed_tags) > 0:
             [updated_tags.discard(tag) for tag in remove_allowed_tags]
             is_updated = True
 
         if is_updated:
             self.markdown_tags = list(updated_tags)
+
+    def _update_allowed_attrs(self, allowed_attrs):
+        if len(allowed_attrs) == 0:
+            return
+
+        self.markdown_attrs = allowed_attrs
 
     def __str__(self):
         return ('tags: ' + str(self.markdown_tags) + '\n'
