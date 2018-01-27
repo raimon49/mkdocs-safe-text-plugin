@@ -1,0 +1,17 @@
+site_name: Customization usage example of plugin (with customization)
+plugins:
+  - mkdocs_safe_text:
+      append_allowed_tags:
+        - audio
+      allowed_attrs:
+        audio:
+          - src
+          - controls
+        img:
+          - src
+          - alt
+          - title
+        a:
+          - href
+          - alt
+          - title

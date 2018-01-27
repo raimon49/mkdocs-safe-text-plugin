@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Basic usage example of plugin
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Display font tag
 
-## Commands
+<font size="20">This is big text.</font>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## Display iframe tag
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oaqHdULqet0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

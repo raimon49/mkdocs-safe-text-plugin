@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# Customized usage of plugin
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Control permission for audio tag
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<audio src="http://open.live.bbc.co.uk/mediaselector/5/redir/version/2.0/mediaset/audio-nondrm-download/proto/http/vpid/p05v0st6.mp3" controls></audio>

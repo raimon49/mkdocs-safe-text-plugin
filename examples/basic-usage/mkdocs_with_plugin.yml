@@ -1,0 +1,3 @@
+site_name: Basic usage example of plugin (with plugin)
+plugins:
+  - mkdocs_safe_text

@@ -1,0 +1,3 @@
+site_name: Customization usage example of plugin (not customization)
+plugins:
+  - mkdocs_safe_text
