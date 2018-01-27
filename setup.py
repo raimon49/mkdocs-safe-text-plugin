@@ -1,6 +1,8 @@
 import os
-from setuptools import setup, find_packages
+import sys
 
+from setuptools import setup, find_packages
+from setuptools.command.test import test as TestCommand
 from mkdocssafetext import (__version__ as VERSION, __author__ as AUTHOR,
                             __license__ as LICENSE)
 
@@ -12,6 +14,20 @@ def read_file(filename):
         return open(filepath).read()
     else:
         return ''
+
+
+class PyTest(TestCommand):
+    user_options = [('pytest-args=', 'a', "Arguments to pass to pytest")]
+
+    def initialize_options(self):
+        TestCommand.initialize_options(self)
+        self.pytest_args = '--pep8 -v --cov mkdocssafetext'
+
+    def run_tests(self):
+        import shlex
+        import pytest
+        errno = pytest.main(shlex.split(self.pytest_args))
+        sys.exit(errno)
 
 
 setup(
@@ -37,6 +53,14 @@ setup(
         'bleach-whitelist',
         'mkdocs>=0.17.0',
     ],
+    tests_require=[
+        'pytest-cov',
+        'pytest-pycodestyle',
+        'pytest-pythonpath',
+    ],
+    cmdclass={
+        'test': PyTest,
+    },
     entry_points={
         'mkdocs.plugins': [
             'mkdocs_safe_text = mkdocssafetext.plugin:SafeTextPlugin',
