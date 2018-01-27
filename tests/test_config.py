@@ -67,5 +67,17 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertNotEqual(plugin_config.markdown_attrs,
                             bleach_whitelist.markdown_attrs)
 
+    def test_str(self):
+        config_is_nothing = {
+            'append_allowed_tags': [],
+            'remove_allowed_tags': [],
+            'allowed_attrs': {},
+        }
+        plugin_config = SafeTextPluginConfig(config_is_nothing)
+
+        printable_plugin = str(plugin_config)
+        self.assertIn('tags:', printable_plugin)
+        self.assertIn('attrs: ', printable_plugin)
+
     def tearDown(self):
         pass

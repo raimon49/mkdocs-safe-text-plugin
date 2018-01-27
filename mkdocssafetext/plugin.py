@@ -12,9 +12,6 @@ from .config import (SAFE_PLUGIN_CONFIG_SCHEME,
 class SafeTextPlugin(BasePlugin):
     config_scheme = SAFE_PLUGIN_CONFIG_SCHEME
 
-    def __init__(self):
-        pass
-
     def on_config(self, config):
         self.plugin_config = SafeTextPluginConfig(self.config)
 
