@@ -23,7 +23,7 @@ setup(
     author_email='raimon49@hotmail.com',
     url='https://github.com/raimon49/mkdocs-safe-text-plugin',
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
