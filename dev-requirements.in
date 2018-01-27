@@ -8,4 +8,5 @@ pip-tools
 pytest-cov
 pytest-pycodestyle
 pytest-pythonpath
+pytest-runner
 twine

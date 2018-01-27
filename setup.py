@@ -37,6 +37,14 @@ setup(
         'bleach-whitelist',
         'mkdocs>=0.17.0',
     ],
+    setup_requires=[
+        'pytest-runner',
+    ],
+    tests_require=[
+        'pytest-cov',
+        'pytest-pycodestyle',
+        'pytest-pythonpath',
+    ],
     entry_points={
         'mkdocs.plugins': [
             'mkdocs_safe_text = mkdocssafetext.plugin:SafeTextPlugin',
