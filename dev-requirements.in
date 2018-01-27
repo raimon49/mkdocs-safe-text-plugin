@@ -1,9 +1,11 @@
 -r requirements.in
 
 autopep8
+codecov
 docutils
 wheel
 pip-tools
+pytest-cov
 pytest-pycodestyle
 pytest-pythonpath
 twine
