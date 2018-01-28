@@ -7,6 +7,8 @@
 
 Plugin for safe text editing with [MKDocs](http://www.mkdocs.org/).
 
+## Table of Contents
+
  * [How does this plugin work?](#how-does-this-plugin-work)
  * [Installation](#installation)
  * [Plugin configuration](#plugin-configuration)
