@@ -7,6 +7,11 @@
 
 Plugin for safe text editing with [MKDocs](http://www.mkdocs.org/).
 
+ * [How does this plugin work?](#how-does-this-plugin-work)
+ * [Installation](#installation)
+ * [Plugin configuration](#plugin-configuration)
+ * [License](#license)
+
 ## How does this plugin work?
 
 Markdown is a very flexible format, and raw HTML is allowed. But it is unnecessary in multiple-person text editing.
