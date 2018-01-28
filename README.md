@@ -36,7 +36,9 @@ An example of use can be checked by [example/basic-usage](examples/basic-usage).
 
 ## Plugin configuration
 
-This plugin works with the [HTML tag element for Markdown defined by bleach-whitelist](https://github.com/yourcelf/bleach-whitelist/blob/master/bleach_whitelist/bleach_whitelist.py) enabled. And user can change this setting.
+This plugin works with the [HTML tag element for Markdown defined by bleach-whitelist](https://github.com/yourcelf/bleach-whitelist/blob/master/bleach_whitelist/bleach_whitelist.py) enabled. This implementation approach is recommended in [the Python-Markdown release notes](https://python-markdown.github.io/change_log/release-2.6/).
+
+And user can change this setting.
 
 ```yaml
 plugins:
