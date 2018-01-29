@@ -5,8 +5,9 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 backports-abc==0.5        # via tornado
+bleach-whitelist==0.0.8
 bleach==2.1.2
-certifi==2017.11.5        # via tornado
+certifi==2018.1.18        # via tornado
 click==6.7                # via mkdocs
 html5lib==1.0.1           # via bleach
 jinja2==2.10              # via mkdocs
