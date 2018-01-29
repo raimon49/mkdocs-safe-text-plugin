@@ -21,7 +21,7 @@ Markdown is a very flexible format, and raw HTML is allowed. But it is unnecessa
 When raw HTML like `<font>` tag is used in MKDocs, it is rendered as it is.
 ![no\_escape\_font](https://user-images.githubusercontent.com/221802/35481481-ac9e4894-0467-11e8-89ab-47ca5037d9d2.png)
 
-If you use this plug-in with MKDocs, tags that are not allowed tags in the whitelist are escaped.
+If you use this plug-in with MKDocs, tags that are not allowed in the whitelist are escaped.
 ![escape\_font](https://user-images.githubusercontent.com/221802/35481484-b268e02c-0467-11e8-8b7a-c3c7232312ed.png)
 
 ## Installation
