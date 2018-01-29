@@ -17,7 +17,7 @@ def read_file(filename):
 setup(
     name='mkdocs-safe-text-plugin',
     version=VERSION,
-    description='TBD.',
+    description='Plugin for safe text editing with MKDocs.',
     long_description=read_file('README.md'),
     author='raimon49',
     author_email='raimon49@hotmail.com',
