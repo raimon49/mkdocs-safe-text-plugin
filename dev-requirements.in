@@ -5,6 +5,7 @@ codecov
 docutils
 wheel
 pip-tools
+pypandoc
 pytest-cov
 pytest-pycodestyle
 pytest-pythonpath

@@ -31,6 +31,7 @@ pkginfo==1.4.1            # via twine
 pluggy==0.6.0             # via pytest
 py==1.5.2                 # via pytest
 pycodestyle==2.3.1        # via autopep8, pytest-pycodestyle
+pypandoc==1.4
 pytest-cache==1.0         # via pytest-pycodestyle
 pytest-cov==2.5.1
 pytest-pycodestyle==1.0.6
