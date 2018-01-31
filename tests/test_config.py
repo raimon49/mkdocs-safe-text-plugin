@@ -4,7 +4,10 @@ from __future__ import (division, print_function,
                         absolute_import, unicode_literals)
 import unittest
 
-import bleach_whitelist
+from bleach_whitelist.bleach_whitelist import (
+    markdown_tags as whitelist_markdown_tags,
+    markdown_attrs as whitelist_markdown_attrs
+)
 from mkdocssafetext.config import SafeTextPluginConfig
 
 
@@ -21,9 +24,9 @@ class TestSafeTextPlugin(unittest.TestCase):
         plugin_config = SafeTextPluginConfig(config_is_nothing)
 
         self.assertEqual(plugin_config.markdown_tags,
-                         bleach_whitelist.markdown_tags)
+                         whitelist_markdown_tags)
         self.assertEqual(plugin_config.markdown_attrs,
-                         bleach_whitelist.markdown_attrs)
+                         whitelist_markdown_attrs)
 
     def test_append_allowed_tags(self):
         config_append_allowed_tags = {
@@ -37,7 +40,7 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertIn('audio', plugin_config.markdown_tags)
         self.assertNotIn('undefined', plugin_config.markdown_tags)
         self.assertNotEqual(plugin_config.markdown_tags,
-                            bleach_whitelist.markdown_tags)
+                            whitelist_markdown_tags)
 
     def test_remove_allowed_tags(self):
         config_remove_allowed_tags = {
@@ -52,7 +55,7 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertNotIn('li', plugin_config.markdown_tags)
         self.assertIn('h1', plugin_config.markdown_tags)
         self.assertNotEqual(plugin_config.markdown_tags,
-                            bleach_whitelist.markdown_tags)
+                            whitelist_markdown_tags)
 
     def test_allowed_attrs(self):
         config_allowed_attrs = {
@@ -65,7 +68,7 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertEqual(plugin_config.markdown_attrs,
                          config_allowed_attrs['allowed_attrs'])
         self.assertNotEqual(plugin_config.markdown_attrs,
-                            bleach_whitelist.markdown_attrs)
+                            whitelist_markdown_attrs)
 
     def test_str(self):
         config_is_nothing = {

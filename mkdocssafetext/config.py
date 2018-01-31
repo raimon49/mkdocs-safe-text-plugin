@@ -5,7 +5,10 @@ from __future__ import (division, print_function,
 import copy
 
 from mkdocs.config import config_options
-from bleach_whitelist import markdown_tags, markdown_attrs
+from bleach_whitelist.bleach_whitelist import (
+    markdown_tags as whitelist_markdown_tags,
+    markdown_attrs as whitelist_markdown_attrs
+)
 
 
 SAFE_PLUGIN_CONFIG_SCHEME = (
@@ -16,8 +19,8 @@ SAFE_PLUGIN_CONFIG_SCHEME = (
 
 
 class SafeTextPluginConfig(object):
-    markdown_tags = copy.deepcopy(markdown_tags)
-    markdown_attrs = copy.deepcopy(markdown_attrs)
+    markdown_tags = copy.deepcopy(whitelist_markdown_tags)
+    markdown_attrs = copy.deepcopy(whitelist_markdown_attrs)
 
     def __init__(self, config):
         self._update_allowed_tags(config['append_allowed_tags'],
