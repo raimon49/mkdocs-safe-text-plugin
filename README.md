@@ -38,7 +38,7 @@ plugins:
   - mkdocs_safe_text
 ```
 
-An example of use can be checked by [example/basic-usage](examples/basic-usage).
+An example of use can be checked by [example/basic-usage](https://github.com/raimon49/mkdocs-safe-text-plugin/tree/master/examples/basic-usage).
 
 ## Plugin configuration
 
@@ -61,8 +61,8 @@ plugins:
           - attribute2
 ```
 
-An example of use can be checked by [example/customization-usage](examples/customization-usage).
+An example of use can be checked by [example/customization-usage](https://github.com/raimon49/mkdocs-safe-text-plugin/tree/master/examples/customization-usage).
 
 ## License
 
-[BSD 2-Clause License](LICENSE)
+[BSD 2-Clause License](https://github.com/raimon49/mkdocs-safe-text-plugin/blob/master/LICENSE)
