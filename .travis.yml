@@ -10,4 +10,4 @@ install:
 script:
   py.test --pep8 -v --cov mkdocssafetext
 after_success:
-  - if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; codecov; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then codecov; fi
