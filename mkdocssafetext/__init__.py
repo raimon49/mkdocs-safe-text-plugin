@@ -3,6 +3,6 @@
 from __future__ import (division, print_function,
                         absolute_import, unicode_literals)
 
-__version__ = '0.5.0'
+__version__ = '1.0.0'
 __author__ = 'raimon'
 __license__ = 'BSD License'
