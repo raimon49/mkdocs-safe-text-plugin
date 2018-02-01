@@ -22,7 +22,7 @@ try:
     separate = '\n\n'
     change_log = convert('CHANGELOG.md', 'rst', format='markdown_github')
 
-    LONG_DESC = about_this  + separate + change_log
+    LONG_DESC = about_this + separate + change_log
 except (IOError, ImportError):
     LONG_DESC = read_file('README.md')
 
