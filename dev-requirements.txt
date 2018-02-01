@@ -13,7 +13,7 @@ bleach==2.1.2
 certifi==2018.1.18        # via requests, tornado
 chardet==3.0.4            # via requests
 click==6.7                # via mkdocs, pip-tools
-codecov==2.0.14
+codecov==2.0.15
 coverage==4.4.2           # via codecov, pytest-cov
 docutils==0.14
 execnet==1.5.0            # via pytest-cache
@@ -37,7 +37,7 @@ pytest-cov==2.5.1
 pytest-pycodestyle==1.0.6
 pytest-pythonpath==0.7.1
 pytest-runner==3.0
-pytest==3.3.2             # via pytest-cache, pytest-cov, pytest-pycodestyle, pytest-pythonpath
+pytest==3.4.0             # via pytest-cache, pytest-cov, pytest-pycodestyle, pytest-pythonpath
 pyyaml==3.12              # via mkdocs
 requests-toolbelt==0.8.0  # via twine
 requests==2.18.4          # via codecov, requests-toolbelt, twine
