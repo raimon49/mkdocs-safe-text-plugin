@@ -46,6 +46,6 @@ build: clean
 
 .PHONY: clean
 clean:
-	find $(SRC_DIR) -name "*~" -or -name "*.swp" -or -name "*.pyc" | xargs rm
+	find $(SRC_DIR) -name "*~" -or -name "*.swp" -or -name "*.pyc" | xargs --no-run-if-empty rm
 	rm -rf dist
 
