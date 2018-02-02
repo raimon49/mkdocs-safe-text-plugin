@@ -65,6 +65,7 @@ setup(
         'pytest-cov',
         'pytest-pycodestyle',
         'pytest-pythonpath',
+        'pytest-runner',
     ],
     entry_points={
         'mkdocs.plugins': [
