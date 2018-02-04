@@ -95,7 +95,6 @@ setup(
     tests_require=[
         'pytest-cov',
         'pytest-pycodestyle',
-        'pytest-pythonpath',
         'pytest-runner',
     ],
     entry_points={
