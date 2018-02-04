@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### 1.1.0
+
+* Embed distribution license in source code
+* Remove dependency on 'pytest-pythonpath'
+
 ### 1.0.0
 
 * First stable release version
