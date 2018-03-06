@@ -6,9 +6,9 @@
 #
 backports-abc==0.5        # via tornado
 bleach-whitelist==0.0.8
-bleach==2.1.2
-certifi==2018.1.18        # via tornado
+bleach==2.1.3
 click==6.7                # via mkdocs
+futures==3.2.0            # via tornado
 html5lib==1.0.1           # via bleach
 jinja2==2.10              # via mkdocs
 livereload==2.5.1         # via mkdocs
@@ -18,5 +18,5 @@ mkdocs==0.17.2
 pyyaml==3.12              # via mkdocs
 singledispatch==3.4.0.3   # via tornado
 six==1.11.0               # via bleach, html5lib, livereload, singledispatch
-tornado==4.5.3            # via livereload, mkdocs
+tornado==5.0              # via livereload, mkdocs
 webencodings==0.5.1       # via html5lib
