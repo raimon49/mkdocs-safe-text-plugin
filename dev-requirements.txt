@@ -43,7 +43,7 @@ requests==2.18.4          # via codecov, requests-toolbelt, twine
 singledispatch==3.4.0.3   # via tornado
 six==1.11.0               # via bleach, html5lib, livereload, pip-tools, pytest, singledispatch
 tornado==4.5.3            # via livereload, mkdocs
-tqdm==4.19.6              # via twine
+tqdm==4.19.7              # via twine
 twine==1.10.0
 urllib3==1.22             # via requests
 webencodings==0.5.1       # via html5lib
