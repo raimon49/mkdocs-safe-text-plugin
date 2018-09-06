@@ -46,7 +46,7 @@ class SafeTextPlugin(BasePlugin):
 
         return config
 
-    def on_page_content(self, html, page, config, site_navigation):
+    def on_page_content(self, html, **kwargs):
         return bleach.clean(html,
                             tags=self.plugin_config.markdown_tags,
                             attributes=self.plugin_config.markdown_attrs)
