@@ -63,7 +63,7 @@ setup(
     version=VERSION,
     description='Plugin for safe text editing with MKDocs.',
     long_description=LONG_DESC,
-    author='raimon49',
+    author=AUTHOR
     author_email='raimon49@hotmail.com',
     url='https://github.com/raimon49/mkdocs-safe-text-plugin',
     classifiers=[
