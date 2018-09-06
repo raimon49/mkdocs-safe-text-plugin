@@ -4,13 +4,14 @@
 #
 #    pip-compile --output-file dev-requirements.txt dev-requirements.in
 #
-apipkg==1.4               # via execnet
-attrs==17.4.0             # via pytest
-autopep8==1.3.5
+apipkg==1.5               # via execnet
+atomicwrites==1.2.1       # via pytest
+attrs==18.2.0             # via pytest
+autopep8==1.4
 backports-abc==0.5        # via tornado
 bleach-whitelist==0.0.8
-bleach==2.1.3
-certifi==2018.1.18        # via requests, tornado
+bleach==2.1.4
+certifi==2018.8.24        # via requests
 chardet==3.0.4            # via requests
 click==6.7                # via mkdocs, pip-tools
 codecov==2.0.15
@@ -19,33 +20,36 @@ docutils==0.14
 execnet==1.5.0            # via pytest-cache
 first==2.0.1              # via pip-tools
 funcsigs==1.0.2           # via pytest
+futures==3.2.0            # via tornado
 html5lib==1.0.1           # via bleach
-idna==2.6                 # via requests
+idna==2.7                 # via requests
 jinja2==2.10              # via mkdocs
-livereload==2.5.1         # via mkdocs
+livereload==2.5.2         # via mkdocs
 markdown==2.6.11          # via mkdocs
 markupsafe==1.0           # via jinja2
-mkdocs==0.17.3
-more-itertools==4.1.0     # via pytest
-pip-tools==1.11.0
+mkdocs==1.0.3
+more-itertools==4.3.0     # via pytest
+pathlib2==2.3.2           # via pytest
+pip-tools==2.0.2
 pkginfo==1.4.2            # via twine
-pluggy==0.6.0             # via pytest
-py==1.5.3                 # via pytest
-pycodestyle==2.3.1        # via autopep8, pytest-pycodestyle
+pluggy==0.7.1             # via pytest
+py==1.6.0                 # via pytest
+pycodestyle==2.4.0        # via autopep8, pytest-pycodestyle
 pypandoc==1.4
 pytest-cache==1.0         # via pytest-pycodestyle
-pytest-cov==2.5.1
+pytest-cov==2.6.0
 pytest-pycodestyle==1.0.6
 pytest-runner==4.2
-pytest==3.5.0             # via pytest-cache, pytest-cov, pytest-pycodestyle
-pyyaml==3.12              # via mkdocs
+pytest==3.8.0             # via pytest-cache, pytest-cov, pytest-pycodestyle
+pyyaml==3.13              # via mkdocs
 requests-toolbelt==0.8.0  # via twine
-requests==2.18.4          # via codecov, requests-toolbelt, twine
+requests==2.19.1          # via codecov, requests-toolbelt, twine
+scandir==1.9.0            # via pathlib2
 singledispatch==3.4.0.3   # via tornado
-six==1.11.0               # via bleach, html5lib, livereload, more-itertools, pip-tools, pytest, singledispatch
-tornado==4.5.3            # via livereload, mkdocs
-tqdm==4.19.9              # via twine
+six==1.11.0               # via bleach, html5lib, livereload, more-itertools, pathlib2, pip-tools, pytest, singledispatch
+tornado==5.1              # via livereload, mkdocs
+tqdm==4.25.0              # via twine
 twine==1.11.0
-urllib3==1.22             # via requests
+urllib3==1.23             # via requests
 webencodings==0.5.1       # via html5lib
-wheel==0.30.0
+wheel==0.31.1
