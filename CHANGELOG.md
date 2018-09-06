@@ -3,6 +3,7 @@
 ### 1.1.1
 
 * Fix to work even after MKDocs 1.0
+* Dropped support Python 3.3
 
 ### 1.1.0
 
