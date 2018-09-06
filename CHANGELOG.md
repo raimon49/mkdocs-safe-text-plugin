@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.1.1
+
+* Fix to work even after MKDocs 1.0
+
 ### 1.1.0
 
 * Embed distribution license in source code
