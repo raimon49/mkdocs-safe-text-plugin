@@ -6,17 +6,16 @@
 #
 backports-abc==0.5        # via tornado
 bleach-whitelist==0.0.8
-bleach==2.1.4
-click==6.7                # via mkdocs
+bleach==3.0.2
+click==7.0                # via mkdocs
 futures==3.2.0            # via tornado
-html5lib==1.0.1           # via bleach
 jinja2==2.10              # via mkdocs
 livereload==2.5.2         # via mkdocs
-markdown==2.6.11          # via mkdocs
+markdown==3.0.1           # via mkdocs
 markupsafe==1.0           # via jinja2
-mkdocs==1.0.3
+mkdocs==1.0.4
 pyyaml==3.13              # via mkdocs
 singledispatch==3.4.0.3   # via tornado
-six==1.11.0               # via bleach, html5lib, livereload, singledispatch
-tornado==5.1              # via livereload, mkdocs
-webencodings==0.5.1       # via html5lib
+six==1.11.0               # via bleach, livereload, singledispatch
+tornado==5.1.1            # via livereload, mkdocs
+webencodings==0.5.1       # via bleach
