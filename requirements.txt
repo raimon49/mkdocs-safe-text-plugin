@@ -8,7 +8,7 @@ backports-abc==0.5        # via tornado
 bleach-whitelist==0.0.9
 bleach==3.1.0
 click==7.0                # via mkdocs
-futures==3.2.0            # via tornado
+futures==3.2.0 ; python_version < "3"
 jinja2==2.10              # via mkdocs
 livereload==2.6.0         # via mkdocs
 markdown==3.0.1           # via mkdocs
