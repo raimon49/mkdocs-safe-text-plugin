@@ -23,7 +23,7 @@ futures==3.2.0 ; python_version < "3"
 idna==2.8                 # via requests
 jinja2==2.10              # via mkdocs
 livereload==2.6.0         # via mkdocs
-markdown==3.0.1           # via mkdocs
+markdown==3.1             # via mkdocs
 markupsafe==1.1.1         # via jinja2
 mkdocs==1.0.4
 more-itertools==5.0.0     # via pytest
