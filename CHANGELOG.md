@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.1.2
+
+* Dropped support Python 3.4
+
 ### 1.1.1
 
 * Fix to work even after MKDocs 1.0

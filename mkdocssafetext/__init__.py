@@ -32,6 +32,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 from __future__ import (division, print_function,
                         absolute_import, unicode_literals)
 
-__version__ = '1.1.1'
+__version__ = '1.1.2'
 __author__ = 'raimon'
 __license__ = 'BSD License'
