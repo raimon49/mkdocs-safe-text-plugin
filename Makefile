@@ -1,7 +1,7 @@
 SRC_DIR='mkdocssafetext'
 DEV_DEPENDS='dev-requirements'
 
-.DEFAULT: help
+.DEFAULT_GOAL:= help
 .PHONY: help
 help:
 	@echo 'Usage: make <subcommand>'
