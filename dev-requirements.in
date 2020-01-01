@@ -9,4 +9,4 @@ pypandoc
 pytest-cov
 pytest-pycodestyle
 pytest-runner
-twine
+twine<2
