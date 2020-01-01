@@ -19,7 +19,7 @@ docutils==0.15.2
 idna==2.8                 # via requests
 jeepney==0.4.1            # via secretstorage
 jinja2==2.10.3            # via mkdocs
-keyring==21.0.0           # via twine
+keyring==20.0.1           # via twine
 livereload==2.6.1         # via mkdocs
 markdown==3.1.1           # via mkdocs
 markupsafe==1.1.1         # via jinja2
