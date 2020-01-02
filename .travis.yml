@@ -10,4 +10,4 @@ install:
 script:
   pytest --pycodestyle -v --cov mkdocssafetext
 after_success:
-  - if [[ $TRAVIS_PYTHON_VERSION == '3.8' ]]; then codecov; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == "3.8" ]]; then codecov; fi
