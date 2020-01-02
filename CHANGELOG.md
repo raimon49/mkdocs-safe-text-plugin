@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### 1.2.0
+
+* Clarified support for Python 3.8
+* Dropped support Python 2.7
+
 ### 1.1.2
 
 * Dropped support Python 3.4
