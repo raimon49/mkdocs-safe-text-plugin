@@ -4,18 +4,18 @@
 #
 #    pip-compile requirements.in
 #
-backports-abc==0.5        # via tornado
 bleach-whitelist==0.0.10
 bleach==3.1.0
 click==7.0                # via mkdocs
-futures==3.2.0 ; python_version < "3"
-jinja2==2.10.1            # via mkdocs
+jinja2==2.10.3            # via mkdocs
 livereload==2.6.1         # via mkdocs
 markdown==3.1.1           # via mkdocs
 markupsafe==1.1.1         # via jinja2
 mkdocs==1.0.4
-pyyaml==5.1.1             # via mkdocs
-singledispatch==3.4.0.3   # via tornado
-six==1.12.0               # via bleach, livereload, singledispatch
-tornado==5.1.1            # via livereload, mkdocs
+pyyaml==5.2               # via mkdocs
+six==1.13.0               # via bleach, livereload
+tornado==6.0.3            # via livereload, mkdocs
 webencodings==0.5.1       # via bleach
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
