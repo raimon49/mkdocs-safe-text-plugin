@@ -42,7 +42,7 @@ six==1.14.0               # via bleach, livereload, packaging, pip-tools, readme
 tornado==6.0.3            # via livereload, mkdocs
 tqdm==4.41.1              # via twine
 twine==1.15.0
-urllib3==1.25.7           # via requests
+urllib3==1.25.8           # via requests
 wcwidth==0.1.8            # via pytest
 webencodings==0.5.1       # via bleach
 wheel==0.33.6

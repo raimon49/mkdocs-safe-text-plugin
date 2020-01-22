@@ -12,8 +12,8 @@ livereload==2.6.1         # via mkdocs
 markdown==3.1.1           # via mkdocs
 markupsafe==1.1.1         # via jinja2
 mkdocs==1.0.4
-pyyaml==5.2               # via mkdocs
-six==1.13.0               # via bleach, livereload
+pyyaml==5.3               # via mkdocs
+six==1.14.0               # via bleach, livereload
 tornado==6.0.3            # via livereload, mkdocs
 webencodings==0.5.1       # via bleach
 
