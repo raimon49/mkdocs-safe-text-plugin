@@ -7,7 +7,7 @@
 bleach-whitelist==0.0.10
 bleach==3.1.0
 click==7.0                # via mkdocs
-jinja2==2.10.3            # via mkdocs
+jinja2==2.11.0            # via mkdocs
 livereload==2.6.1         # via mkdocs
 markdown==3.1.1           # via mkdocs
 markupsafe==1.1.1         # via jinja2
