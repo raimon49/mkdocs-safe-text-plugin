@@ -15,14 +15,14 @@ codecov==2.0.15
 coverage==5.0.3           # via codecov, pytest-cov
 docutils==0.16
 idna==2.8                 # via requests
-jinja2==2.11.0            # via mkdocs
+jinja2==2.11.1            # via mkdocs
 livereload==2.6.1         # via mkdocs
-markdown==3.1.1           # via mkdocs
+markdown==3.2             # via mkdocs
 markupsafe==1.1.1         # via jinja2
 mkdocs==1.0.4
-more-itertools==8.1.0     # via pytest
+more-itertools==8.2.0     # via pytest
 packaging==20.1           # via pytest
-pip-tools==4.4.0
+pip-tools==4.4.1
 pkginfo==1.5.0.1          # via twine
 pluggy==0.13.1            # via pytest
 py==1.8.1                 # via pytest
@@ -33,19 +33,19 @@ pyparsing==2.4.6          # via packaging
 pytest-cov==2.8.1
 pytest-pycodestyle==2.0.0
 pytest-runner==5.2
-pytest==5.3.4             # via pytest-cov, pytest-pycodestyle
+pytest==5.3.5             # via pytest-cov, pytest-pycodestyle
 pyyaml==5.3               # via mkdocs
 readme-renderer==24.0     # via twine
 requests-toolbelt==0.9.1  # via twine
 requests==2.22.0          # via codecov, requests-toolbelt, twine
 six==1.14.0               # via bleach, livereload, packaging, pip-tools, readme-renderer
 tornado==6.0.3            # via livereload, mkdocs
-tqdm==4.42.0              # via twine
+tqdm==4.42.1              # via twine
 twine==1.15.0
 urllib3==1.25.8           # via requests
 wcwidth==0.1.8            # via pytest
 webencodings==0.5.1       # via bleach
-wheel==0.34.1
+wheel==0.34.2
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
