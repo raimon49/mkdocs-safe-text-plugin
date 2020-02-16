@@ -17,7 +17,7 @@ docutils==0.16
 idna==2.8                 # via requests
 jinja2==2.11.1            # via mkdocs
 livereload==2.6.1         # via mkdocs
-markdown==3.2             # via mkdocs
+markdown==3.2.1           # via mkdocs
 markupsafe==1.1.1         # via jinja2
 mkdocs==1.0.4
 more-itertools==8.2.0     # via pytest
