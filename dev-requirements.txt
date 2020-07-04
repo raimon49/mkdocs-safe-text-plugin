@@ -17,7 +17,7 @@ docutils==0.16            # via -r dev-requirements.in, readme-renderer
 future==0.18.2            # via lunr
 idna==2.10                # via requests
 jinja2==2.11.2            # via mkdocs
-joblib==0.16.0            # via nltk
+joblib==0.14.1            # via nltk
 livereload==2.6.2         # via mkdocs
 lunr[languages]==0.5.8    # via mkdocs
 markdown==3.2.2           # via mkdocs
