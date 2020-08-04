@@ -59,13 +59,9 @@ except (IOError, ImportError):
 
 
 setup(
-    name='mkdocs-safe-text-plugin',
     version=VERSION,
-    description='Plugin for safe text editing with MKDocs.',
     long_description=LONG_DESC,
     author=AUTHOR,
-    author_email='raimon49@hotmail.com',
-    url='https://github.com/raimon49/mkdocs-safe-text-plugin',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: BSD License',
