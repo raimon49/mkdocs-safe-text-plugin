@@ -32,9 +32,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import os
 from setuptools import setup, find_packages
 
-from mkdocssafetext import (__version__ as VERSION, __author__ as AUTHOR,
-                            __license__ as LICENSE)
-
 
 def read_file(filename):
     basepath = os.path.dirname(os.path.dirname(__file__))
@@ -59,9 +56,7 @@ except (IOError, ImportError):
 
 
 setup(
-    version=VERSION,
     long_description=LONG_DESC,
-    author=AUTHOR,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: BSD License',
@@ -76,8 +71,6 @@ setup(
     ],
     packages=find_packages(exclude=['tests*']),
     include_package_data=True,
-    keywords='mkdocs bleach xss',
-    license=LICENSE,
     python_requires='~=3.5',
     install_requires=[
         'bleach',
