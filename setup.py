@@ -57,18 +57,6 @@ except (IOError, ImportError):
 
 setup(
     long_description=LONG_DESC,
-    classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'License :: OSI Approved :: BSD License',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Topic :: Documentation',
-        'Topic :: Text Processing',
-    ],
     packages=find_packages(exclude=['tests*']),
     include_package_data=True,
     python_requires='~=3.5',
