@@ -57,22 +57,6 @@ except (IOError, ImportError):
 
 setup(
     long_description=LONG_DESC,
-    packages=find_packages(exclude=['tests*']),
-    include_package_data=True,
-    python_requires='~=3.5',
-    install_requires=[
-        'bleach',
-        'bleach-whitelist',
-        'mkdocs>=0.17.0',
-    ],
-    setup_requires=[
-        'pytest-runner',
-    ],
-    tests_require=[
-        'pytest-cov',
-        'pytest-pycodestyle',
-        'pytest-runner',
-    ],
     entry_points={
         'mkdocs.plugins': [
             'mkdocs_safe_text = mkdocssafetext.plugin:SafeTextPlugin',
