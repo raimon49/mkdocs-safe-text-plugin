@@ -32,6 +32,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import os
 from setuptools import setup, find_packages
 
+from mkdocssafetext import (__version__ as VERSION, __author__ as AUTHOR,
+                            __license__ as LICENSE)
+
 
 def read_file(filename):
     basepath = os.path.dirname(os.path.dirname(__file__))
@@ -56,7 +59,10 @@ except (IOError, ImportError):
 
 
 setup(
+    version=VERSION,
     long_description=LONG_DESC,
+    author=AUTHOR,
+    license=LICENSE,
     entry_points={
         'mkdocs.plugins': [
             'mkdocs_safe_text = mkdocssafetext.plugin:SafeTextPlugin',
