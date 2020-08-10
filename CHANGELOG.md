@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### 1.3.0
+
+* Migrate using Python package from `bleach-whitelist` to `bleach-allowlist`
+* Clarified support for Python 3.9
+* Dropped support Python 3.5
+
 ### 1.2.0
 
 * Clarified support for Python 3.8
