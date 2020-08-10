@@ -1,9 +1,9 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 import unittest
 
-from bleach_whitelist.bleach_whitelist import (
-    markdown_tags as whitelist_markdown_tags,
-    markdown_attrs as whitelist_markdown_attrs
+from bleach_allowlist.bleach_allowlist import (
+    markdown_tags as allowlist_markdown_tags,
+    markdown_attrs as allowlist_markdown_attrs
 )
 from mkdocssafetext.config import SafeTextPluginConfig
 
@@ -12,7 +12,7 @@ class TestSafeTextPlugin(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_default_config_is_based_on_whitelist(self):
+    def test_default_config_is_based_on_allowlist(self):
         config_is_nothing = {
             'append_allowed_tags': [],
             'remove_allowed_tags': [],
@@ -21,9 +21,9 @@ class TestSafeTextPlugin(unittest.TestCase):
         plugin_config = SafeTextPluginConfig(config_is_nothing)
 
         self.assertEqual(plugin_config.markdown_tags,
-                         whitelist_markdown_tags)
+                         allowlist_markdown_tags)
         self.assertEqual(plugin_config.markdown_attrs,
-                         whitelist_markdown_attrs)
+                         allowlist_markdown_attrs)
 
     def test_append_allowed_tags(self):
         config_append_allowed_tags = {
@@ -37,7 +37,7 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertIn('audio', plugin_config.markdown_tags)
         self.assertNotIn('undefined', plugin_config.markdown_tags)
         self.assertNotEqual(plugin_config.markdown_tags,
-                            whitelist_markdown_tags)
+                            allowlist_markdown_tags)
 
     def test_remove_allowed_tags(self):
         config_remove_allowed_tags = {
@@ -52,7 +52,7 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertNotIn('li', plugin_config.markdown_tags)
         self.assertIn('h1', plugin_config.markdown_tags)
         self.assertNotEqual(plugin_config.markdown_tags,
-                            whitelist_markdown_tags)
+                            allowlist_markdown_tags)
 
     def test_allowed_attrs(self):
         config_allowed_attrs = {
@@ -65,7 +65,7 @@ class TestSafeTextPlugin(unittest.TestCase):
         self.assertEqual(plugin_config.markdown_attrs,
                          config_allowed_attrs['allowed_attrs'])
         self.assertNotEqual(plugin_config.markdown_attrs,
-                            whitelist_markdown_attrs)
+                            allowlist_markdown_attrs)
 
     def test_str(self):
         config_is_nothing = {
