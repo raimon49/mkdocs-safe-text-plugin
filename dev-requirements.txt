@@ -6,7 +6,7 @@
 #
 attrs==19.3.0             # via pytest
 autopep8==1.5.4           # via -r dev-requirements.in
-bleach-allowlist==1.0.2   # via -r requirements.in
+bleach-allowlist==1.0.3   # via -r requirements.in
 bleach==3.1.5             # via -r requirements.in, readme-renderer
 certifi==2020.6.20        # via requests
 cffi==1.14.1              # via cryptography
@@ -41,7 +41,7 @@ pycparser==2.20           # via cffi
 pygments==2.6.1           # via readme-renderer
 pypandoc==1.5             # via -r dev-requirements.in
 pyparsing==2.4.7          # via packaging
-pytest-cov==2.10.0        # via -r dev-requirements.in
+pytest-cov==2.10.1        # via -r dev-requirements.in
 pytest-pycodestyle==2.2.0  # via -r dev-requirements.in
 pytest-runner==5.2        # via -r dev-requirements.in
 pytest==6.0.1             # via pytest-cov, pytest-pycodestyle
@@ -59,7 +59,7 @@ tqdm==4.48.2              # via nltk, twine
 twine==3.2.0              # via -r dev-requirements.in
 urllib3==1.25.10          # via requests
 webencodings==0.5.1       # via bleach
-wheel==0.34.2             # via -r dev-requirements.in, pypandoc
+wheel==0.35.1             # via -r dev-requirements.in, pypandoc
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
