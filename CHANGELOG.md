@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.3.1
+
+* Requires `bleach-allowlist` version 1.0.3 or higher
+
 ### 1.3.0
 
 * Migrate using Python package from `bleach-whitelist` to `bleach-allowlist`

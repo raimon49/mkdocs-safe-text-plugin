@@ -9,7 +9,7 @@ autopep8==1.5.4           # via -r dev-requirements.in
 bleach-allowlist==1.0.3   # via -r requirements.in
 bleach==3.1.5             # via -r requirements.in, readme-renderer
 certifi==2020.6.20        # via requests
-cffi==1.14.1              # via cryptography
+cffi==1.14.2              # via cryptography
 chardet==3.0.4            # via requests
 click==7.1.2              # via mkdocs, nltk, pip-tools
 codecov==2.1.8            # via -r dev-requirements.in
