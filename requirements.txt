@@ -10,7 +10,7 @@ click==7.1.2              # via mkdocs, nltk
 future==0.18.2            # via lunr
 jinja2==2.11.2            # via mkdocs
 joblib==0.16.0            # via nltk
-livereload==2.6.2         # via mkdocs
+livereload==2.6.3         # via mkdocs
 lunr[languages]==0.5.8    # via mkdocs
 markdown==3.2.2           # via mkdocs
 markupsafe==1.1.1         # via jinja2

@@ -4,7 +4,7 @@
 #
 #    pip-compile dev-requirements.in
 #
-attrs==19.3.0             # via pytest
+attrs==20.1.0             # via pytest
 autopep8==1.5.4           # via -r dev-requirements.in
 bleach-allowlist==1.0.3   # via -r requirements.in
 bleach==3.1.5             # via -r requirements.in, readme-renderer
@@ -12,7 +12,7 @@ certifi==2020.6.20        # via requests
 cffi==1.14.2              # via cryptography
 chardet==3.0.4            # via requests
 click==7.1.2              # via mkdocs, nltk, pip-tools
-codecov==2.1.8            # via -r dev-requirements.in
+codecov==2.1.9            # via -r dev-requirements.in
 colorama==0.4.3           # via twine
 coverage==5.2.1           # via codecov, pytest-cov
 cryptography==3.0         # via secretstorage
@@ -23,8 +23,8 @@ iniconfig==1.0.1          # via pytest
 jeepney==0.4.3            # via keyring, secretstorage
 jinja2==2.11.2            # via mkdocs
 joblib==0.16.0            # via nltk
-keyring==21.3.0           # via twine
-livereload==2.6.2         # via mkdocs
+keyring==21.3.1           # via twine
+livereload==2.6.3         # via mkdocs
 lunr[languages]==0.5.8    # via mkdocs
 markdown==3.2.2           # via mkdocs
 markupsafe==1.1.1         # via jinja2
