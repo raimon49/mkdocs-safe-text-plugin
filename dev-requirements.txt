@@ -15,7 +15,7 @@ click==7.1.2              # via mkdocs, nltk, pip-tools
 codecov==2.1.9            # via -r dev-requirements.in
 colorama==0.4.3           # via twine
 coverage==5.2.1           # via codecov, pytest-cov
-cryptography==3.0         # via secretstorage
+cryptography==3.1         # via secretstorage
 docutils==0.16            # via -r dev-requirements.in, readme-renderer
 future==0.18.2            # via lunr
 idna==2.10                # via requests
@@ -23,13 +23,13 @@ iniconfig==1.0.1          # via pytest
 jeepney==0.4.3            # via keyring, secretstorage
 jinja2==2.11.2            # via mkdocs
 joblib==0.16.0            # via nltk
-keyring==21.3.1           # via twine
+keyring==21.4.0           # via twine
 livereload==2.6.3         # via mkdocs
 lunr[languages]==0.5.8    # via mkdocs
 markdown==3.2.2           # via mkdocs
 markupsafe==1.1.1         # via jinja2
 mkdocs==1.1.2             # via -r requirements.in
-more-itertools==8.4.0     # via pytest
+more-itertools==8.5.0     # via pytest
 nltk==3.5                 # via lunr
 packaging==20.4           # via bleach, pytest
 pip-tools==5.3.1          # via -r dev-requirements.in
