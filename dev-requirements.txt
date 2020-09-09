@@ -4,7 +4,7 @@
 #
 #    pip-compile dev-requirements.in
 #
-attrs==20.1.0             # via pytest
+attrs==20.2.0             # via pytest
 autopep8==1.5.4           # via -r dev-requirements.in
 bleach-allowlist==1.0.3   # via -r requirements.in
 bleach==3.1.5             # via -r requirements.in, readme-renderer
