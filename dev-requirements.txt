@@ -29,7 +29,6 @@ lunr[languages]==0.5.8    # via mkdocs
 markdown==3.2.2           # via mkdocs
 markupsafe==1.1.1         # via jinja2
 mkdocs==1.1.2             # via -r requirements.in
-more-itertools==8.5.0     # via pytest
 nltk==3.5                 # via lunr
 packaging==20.4           # via bleach, pytest
 pip-tools==5.3.1          # via -r dev-requirements.in
@@ -44,10 +43,10 @@ pyparsing==2.4.7          # via packaging
 pytest-cov==2.10.1        # via -r dev-requirements.in
 pytest-pycodestyle==2.2.0  # via -r dev-requirements.in
 pytest-runner==5.2        # via -r dev-requirements.in
-pytest==6.0.2             # via pytest-cov, pytest-pycodestyle
+pytest==6.1.0             # via pytest-cov, pytest-pycodestyle
 pyyaml==5.3.1             # via mkdocs
 readme-renderer==26.0     # via twine
-regex==2020.7.14          # via nltk
+regex==2020.9.27          # via nltk
 requests-toolbelt==0.9.1  # via twine
 requests==2.24.0          # via codecov, requests-toolbelt, twine
 rfc3986==1.4.0            # via twine
@@ -55,7 +54,7 @@ secretstorage==3.1.2      # via keyring
 six==1.15.0               # via bleach, cryptography, livereload, lunr, packaging, pip-tools, readme-renderer
 toml==0.10.1              # via autopep8, pytest
 tornado==6.0.4            # via livereload, mkdocs
-tqdm==4.49.0              # via nltk, twine
+tqdm==4.50.0              # via nltk, twine
 twine==3.2.0              # via -r dev-requirements.in
 urllib3==1.25.10          # via requests
 webencodings==0.5.1       # via bleach
