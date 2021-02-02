@@ -6,7 +6,7 @@
 #
 bleach-allowlist==1.0.3
     # via -r requirements.in
-bleach==3.2.1
+bleach==3.3.0
     # via -r requirements.in
 click==7.1.2
     # via
