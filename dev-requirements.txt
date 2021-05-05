@@ -6,7 +6,7 @@
 #
 attrs==20.3.0
     # via pytest
-autopep8==1.5.6
+autopep8==1.5.7
     # via -r dev-requirements.in
 bleach-allowlist==1.0.3
     # via -r requirements.in
@@ -35,7 +35,7 @@ coverage==5.5
     #   pytest-cov
 cryptography==3.4.7
     # via secretstorage
-docutils==0.17
+docutils==0.17.1
     # via
     #   -r dev-requirements.in
     #   readme-renderer
@@ -43,7 +43,7 @@ future==0.18.2
     # via lunr
 idna==2.10
     # via requests
-importlib-metadata==3.10.0
+importlib-metadata==4.0.1
     # via
     #   keyring
     #   twine
@@ -69,7 +69,7 @@ markupsafe==1.1.1
     # via jinja2
 mkdocs==1.1.2
     # via -r requirements.in
-nltk==3.6.1
+nltk==3.6.2
     # via lunr
 packaging==20.9
     # via
@@ -77,7 +77,7 @@ packaging==20.9
     #   pytest
 pep517==0.10.0
     # via pip-tools
-pip-tools==6.0.1
+pip-tools==6.1.0
     # via -r dev-requirements.in
 pkginfo==1.7.0
     # via twine
@@ -91,7 +91,7 @@ pycodestyle==2.7.0
     #   pytest-pycodestyle
 pycparser==2.20
     # via cffi
-pygments==2.8.1
+pygments==2.9.0
     # via readme-renderer
 pypandoc==1.5
     # via -r dev-requirements.in
@@ -103,7 +103,7 @@ pytest-pycodestyle==2.2.0
     # via -r dev-requirements.in
 pytest-runner==5.3.0
     # via -r dev-requirements.in
-pytest==6.2.3
+pytest==6.2.4
     # via
     #   pytest-cov
     #   pytest-pycodestyle
