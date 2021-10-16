@@ -28,7 +28,7 @@ markupsafe==1.1.1
     # via jinja2
 mkdocs==1.1.2
     # via -r requirements.in
-nltk==3.6.1
+nltk==3.6.5
     # via lunr
 packaging==20.9
     # via bleach
@@ -36,7 +36,7 @@ pyparsing==2.4.7
     # via packaging
 pyyaml==5.4.1
     # via mkdocs
-regex==2021.4.4
+regex==2021.10.8
     # via nltk
 six==1.15.0
     # via
