@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### 1.4.0
+
+* Clarified support for Python 3.10
+* Dropped support Python 3.6
+
 ### 1.3.1
 
 * Requires `bleach-allowlist` version 1.0.3 or higher
