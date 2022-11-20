@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.5.0
+
+* Clarified support for Python 3.11
+
 ### 1.4.0
 
 * Clarified support for Python 3.10
