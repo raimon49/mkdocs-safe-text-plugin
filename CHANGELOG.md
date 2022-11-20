@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.5.1
+
+* Clarified support for Python 3.11(fix metadata)
+
 ### 1.5.0
 
 * Clarified support for Python 3.11
