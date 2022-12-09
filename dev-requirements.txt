@@ -16,7 +16,7 @@ bleach-allowlist==1.0.3
     # via -r requirements.in
 build==0.9.0
     # via pip-tools
-certifi==2022.9.24
+certifi==2022.12.7
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -40,8 +40,6 @@ docutils==0.19
     # via
     #   -r dev-requirements.in
     #   readme-renderer
-exceptiongroup==1.0.4
-    # via pytest
 ghp-import==2.1.0
     # via mkdocs
 idna==3.4
@@ -49,8 +47,6 @@ idna==3.4
 importlib-metadata==5.0.0
     # via
     #   keyring
-    #   markdown
-    #   mkdocs
     #   twine
 iniconfig==1.1.1
     # via pytest
@@ -141,16 +137,9 @@ six==1.16.0
     #   bleach
     #   python-dateutil
 tomli==2.0.1
-    # via
-    #   autopep8
-    #   build
-    #   coverage
-    #   pep517
-    #   pytest
+    # via autopep8
 twine==4.0.1
     # via -r dev-requirements.in
-typing-extensions==4.4.0
-    # via rich
 urllib3==1.26.12
     # via
     #   requests
