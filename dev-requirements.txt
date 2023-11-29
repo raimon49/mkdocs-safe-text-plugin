@@ -27,13 +27,17 @@ click==8.1.3
     #   mkdocs
     #   pip-tools
 coverage[toml]==7.1.0
-    # via pytest-cov
-cryptography==41.0.4
+    # via
+    #   coverage
+    #   pytest-cov
+cryptography==41.0.6
     # via secretstorage
 docutils==0.19
     # via
     #   -r dev-requirements.in
     #   readme-renderer
+exceptiongroup==1.2.0
+    # via pytest
 ghp-import==2.1.0
     # via mkdocs
 idna==3.4
@@ -41,7 +45,11 @@ idna==3.4
 importlib-metadata==6.0.0
     # via
     #   keyring
+    #   markdown
+    #   mkdocs
     #   twine
+importlib-resources==6.1.1
+    # via keyring
 iniconfig==2.0.0
     # via pytest
 jaraco-classes==3.2.3
@@ -131,8 +139,17 @@ six==1.16.0
     # via
     #   bleach
     #   python-dateutil
+tomli==2.0.1
+    # via
+    #   autopep8
+    #   build
+    #   coverage
+    #   pyproject-hooks
+    #   pytest
 twine==4.0.2
     # via -r dev-requirements.in
+typing-extensions==4.8.0
+    # via rich
 urllib3==1.26.18
     # via
     #   requests
@@ -146,7 +163,9 @@ wheel==0.38.4
     #   -r dev-requirements.in
     #   pip-tools
 zipp==3.13.0
-    # via importlib-metadata
+    # via
+    #   importlib-metadata
+    #   importlib-resources
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
