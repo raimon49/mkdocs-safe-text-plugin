@@ -46,10 +46,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = https://github.com/raimon49/mkdocs-safe-text-plugin
-Releases = https://github.com/raimon49/mkdocs-safe-text-plugin/releases
-Issues = https://github.com/raimon49/mkdocs-safe-text-plugin/issues
-Changelog = https://github.com/raimon49/mkdocs-safe-text-plugin/blob/master/CHANGELOG.md
+Homepage  = "https://github.com/raimon49/mkdocs-safe-text-plugin"
+Releases  = "https://github.com/raimon49/mkdocs-safe-text-plugin/releases"
+Issues    = "https://github.com/raimon49/mkdocs-safe-text-plugin/issues"
+Changelog = "https://github.com/raimon49/mkdocs-safe-text-plugin/blob/master/CHANGELOG.md"
 
 [tool.setuptools.dynamic]
 version = {attr = "mkdocssafetext.__version__"}
