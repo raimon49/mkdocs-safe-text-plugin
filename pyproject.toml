@@ -9,7 +9,8 @@ authors = [
 ]
 keywords = ["mkdocs", "bleach", "xss"]
 description = "Plugin for safe text editing with MKDocs."
-readme = ["README.md", "CHANGELOG.md"]
+license = {text = "BSD License"}
+readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -50,6 +51,12 @@ Homepage  = "https://github.com/raimon49/mkdocs-safe-text-plugin"
 Releases  = "https://github.com/raimon49/mkdocs-safe-text-plugin/releases"
 Issues    = "https://github.com/raimon49/mkdocs-safe-text-plugin/issues"
 Changelog = "https://github.com/raimon49/mkdocs-safe-text-plugin/blob/master/CHANGELOG.md"
+
+[project.entry-points."mkdocs.plugins"]
+mkdocs_safe_text = "mkdocssafetext.plugin:SafeTextPlugin"
+
+[tool.setuptools]
+packages = ["mkdocssafetext"]
 
 [tool.setuptools.dynamic]
 version = {attr = "mkdocssafetext.__version__"}
