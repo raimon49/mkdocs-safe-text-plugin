@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### 1.6.0
+
+* Clarified support for Python 3.12
+* Dropped support Python 3.7 and Python 3.8
+* Migration pyproject.toml about this package
+
 ### 1.5.1
 
 * Clarified support for Python 3.11(fix metadata)
