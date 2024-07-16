@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs-safe-text-plugin"
+authors = [
+  { name="raimon", email="raimon49@hotmail.com" },
+]
+keywords = ["mkdocs", "bleach", "xss"]
+description = "Plugin for safe text editing with MKDocs."
+license = {text = "BSD License"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation",
+    "Topic :: Text Processing",
+]
+dependencies = [
+    "bleach",
+    "bleach-allowlist>=1.0.3",
+    "mkdocs>=0.17.0"
+]
+dynamic = ["version", "readme"]
+
+[project.optional-dependencies]
+dev = [
+    "autopep8",
+    "docutils",
+    "wheel",
+    "pip-tools",
+    "pypandoc",
+    "pytest-cov",
+    "pytest-pycodestyle",
+    "pytest-runner",
+    "twine"
+]
+
+[project.urls]
+Homepage  = "https://github.com/raimon49/mkdocs-safe-text-plugin"
+Releases  = "https://github.com/raimon49/mkdocs-safe-text-plugin/releases"
+Issues    = "https://github.com/raimon49/mkdocs-safe-text-plugin/issues"
+Changelog = "https://github.com/raimon49/mkdocs-safe-text-plugin/blob/master/CHANGELOG.md"
+
+[project.entry-points."mkdocs.plugins"]
+mkdocs_safe_text = "mkdocssafetext.plugin:SafeTextPlugin"
+
+[tool.setuptools]
+packages = ["mkdocssafetext"]
+
+[tool.setuptools.dynamic]
+version = {attr = "mkdocssafetext.__version__"}
+readme = {file = ["README.md", "CHANGELOG.md"], content-type = "text/markdown"}
+
+[tool.distutils.bdist_wheel]
+universal = 0
+
+[tool.pytest.ini_options]
+addopts = "--pycodestyle -v --cov mkdocssafetext"
