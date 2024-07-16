@@ -10,7 +10,6 @@ authors = [
 keywords = ["mkdocs", "bleach", "xss"]
 description = "Plugin for safe text editing with MKDocs."
 license = {text = "BSD License"}
-readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -30,7 +29,7 @@ dependencies = [
     "bleach-allowlist>=1.0.3",
     "mkdocs>=0.17.0"
 ]
-dynamic = ["version"]
+dynamic = ["version", "readme"]
 
 [project.optional-dependencies]
 dev = [
@@ -59,6 +58,7 @@ packages = ["mkdocssafetext"]
 
 [tool.setuptools.dynamic]
 version = {attr = "mkdocssafetext.__version__"}
+readme = {file = ["README.md", "CHANGELOG.md"], content-type = "text/markdown"}
 
 [tool.distutils.bdist_wheel]
 universal = 0
