@@ -11,7 +11,7 @@ keywords = ["mkdocs", "bleach", "xss"]
 description = "Plugin for safe text editing with MKDocs."
 license = {text = "BSD License"}
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.9"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "License :: OSI Approved :: BSD License",
@@ -59,3 +59,9 @@ packages = ["mkdocssafetext"]
 
 [tool.setuptools.dynamic]
 version = {attr = "mkdocssafetext.__version__"}
+
+[tool.distutils.bdist_wheel]
+universal = 0
+
+[tool.pytest.ini_options]
+addopts = "--pycodestyle -v --cov mkdocssafetext"
