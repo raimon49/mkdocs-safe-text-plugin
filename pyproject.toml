@@ -65,3 +65,6 @@ universal = 0
 
 [tool.pytest.ini_options]
 addopts = "--pycodestyle -v --cov mkdocssafetext"
+
+[tool.coverage.run]
+omit = ["mkdocssafetext/__init__.py", "mkdocssafetext/plugin.py"]

@@ -1,4 +1,0 @@
-[run]
-omit =
-    mkdocssafetext/__init__.py
-    mkdocssafetext/plugin.py
