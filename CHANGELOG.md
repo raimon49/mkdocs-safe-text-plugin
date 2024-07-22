@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.6.1
+
+* Use SPDX short identifier style for license text
+
 ### 1.6.0
 
 * Clarified support for Python 3.12
